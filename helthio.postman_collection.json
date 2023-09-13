@@ -1,0 +1,1790 @@
+{
+	"info": {
+		"_postman_id": "9f763525-ae9c-4323-9c8a-d82b756b2945",
+		"name": "WiseGPT Template",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27927014"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"mituls\",\n  \"password\": \"Admin@123\"\n}"
+				},
+				"url": {
+					"raw": "https://demoapiwisegpt.dhiwise.co/device/auth/login",
+					"protocol": "https",
+					"host": [
+						"demoapiwisegpt",
+						"dhiwise",
+						"co"
+					],
+					"path": [
+						"device",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"mituls\",\n  \"password\": \"Admin@123\"\n}"
+						},
+						"url": {
+							"raw": "https://demoapiwisegpt.dhiwise.co/device/auth/login",
+							"protocol": "https",
+							"host": [
+								"demoapiwisegpt",
+								"dhiwise",
+								"co"
+							],
+							"path": [
+								"device",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 24 Aug 2023 06:15:01 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"22a-3EJpBUytKBX1NHNkZqy1he8xgzM\""
+						},
+						{
+							"key": "Server",
+							"value": "express"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "express"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=691200, s-maxage=691200"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, must-revalidate, proxy-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "public"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"message\": \"Login Successful\",\n    \"data\": {\n        \"username\": \"mituls\",\n        \"email\": \"mitul@testapp.com\",\n        \"name\": \"Mitul S\",\n        \"userType\": 1,\n        \"agreeTerms\": true,\n        \"mobileNo\": \"(939) 393-3939\",\n        \"loginRetryLimit\": 0,\n        \"createdAt\": \"2023-08-24T05:48:38.559Z\",\n        \"updatedAt\": \"2023-08-24T05:48:38.559Z\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"id\": \"64e6ef362c6d8293ee4bb5a6\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTZlZjM2MmM2ZDgyOTNlZTRiYjVhNiIsInVzZXJuYW1lIjoibWl0dWxzIiwiaWF0IjoxNjkyODU3NzAxLCJleHAiOjE2OTM0NTc3MDF9.CN7TDSXKO3LwMbY4gbz2DHo1o8lYZZUtkZm2EZrE_lU\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"snehals\",\n  \"password\": \"Admin@123\",\n  \"email\": \"snehal@testapp.com\",\n  \"name\": \"Snehal S\"\n}"
+				},
+				"url": {
+					"raw": "https://demoapiwisegpt.dhiwise.co/device/auth/register",
+					"protocol": "https",
+					"host": [
+						"demoapiwisegpt",
+						"dhiwise",
+						"co"
+					],
+					"path": [
+						"device",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sign Up Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"kevalm\",\n  \"password\": \"Admin@123\",\n  \"email\": \"keval@testapp.com\",\n  \"name\": \"Keval M\",\n  \"agreeTerms\": true,\n  \"mobileNo\": \"(123) 123-1234\"\n}"
+						},
+						"url": {
+							"raw": "https://demoapiwisegpt.dhiwise.co/device/auth/register",
+							"protocol": "https",
+							"host": [
+								"demoapiwisegpt",
+								"dhiwise",
+								"co"
+							],
+							"path": [
+								"device",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 24 Aug 2023 06:15:47 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"248-yNx7rLm7jMq5LXKigEIi7gpXX8s\""
+						},
+						{
+							"key": "Server",
+							"value": "express"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "express"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=691200, s-maxage=691200"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, must-revalidate, proxy-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "public"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"message\": \"Your request is successfully executed\",\n    \"data\": {\n        \"username\": \"kevalm\",\n        \"email\": \"keval@testapp.com\",\n        \"name\": \"Keval M\",\n        \"userType\": 1,\n        \"agreeTerms\": true,\n        \"mobileNo\": \"(123) 123-1234\",\n        \"loginRetryLimit\": 0,\n        \"_id\": \"64e6f5932c6d8293ee4bb696\",\n        \"createdAt\": \"2023-08-24T06:15:47.739Z\",\n        \"updatedAt\": \"2023-08-24T06:15:47.739Z\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"__v\": 0,\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTZmNTkzMmM2ZDgyOTNlZTRiYjY5NiIsInVzZXJuYW1lIjoia2V2YWxtIiwiaWF0IjoxNjkyODU3NzQ3LCJleHAiOjE2OTM0NTc3NDd9.Xbcu0o16Rurjp0AjB7LF5vQKC8ZCjYCCHuYec-Whpeg\"\n    }\n}"
+				},
+				{
+					"name": "Sign Up Validation Error Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"mituls\",\n  \"password\": \"Admin@123\",\n  \"email\": \"mitul@testapp.com\",\n  \"name\": \"Mitul S\",\n  \"agreeTerms\": true,\n  \"mobileNo\": \"(939) 393-3939\"\n}"
+						},
+						"url": {
+							"raw": "https://demoapiwisegpt.dhiwise.co/device/auth/register",
+							"protocol": "https",
+							"host": [
+								"demoapiwisegpt",
+								"dhiwise",
+								"co"
+							],
+							"path": [
+								"device",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 24 Aug 2023 06:16:07 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "104"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"68-FQyfh6O+jIUhIhbiYRZZJN43xzc\""
+						},
+						{
+							"key": "Server",
+							"value": "express"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "express"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"VALIDATION_ERROR\",\n    \"message\": \"mituls already exists.Unique username are allowed.\",\n    \"data\": null\n}"
+				},
+				{
+					"name": "Sign Up",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"snehals\",\n  \"password\": \"Admin@123\",\n  \"email\": \"snehal@testapp.com\",\n  \"name\": \"Snehal S\"\n}"
+						},
+						"url": {
+							"raw": "https://demoapiwisegpt.dhiwise.co/device/auth/register",
+							"protocol": "https",
+							"host": [
+								"demoapiwisegpt",
+								"dhiwise",
+								"co"
+							],
+							"path": [
+								"device",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 24 Aug 2023 10:13:22 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"21f-uUxgEvSsIdgftdT80mfJgxa4EvU\""
+						},
+						{
+							"key": "Server",
+							"value": "express"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "express"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=691200, s-maxage=691200"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, must-revalidate, proxy-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "public"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"message\": \"Your request is successfully executed\",\n    \"data\": {\n        \"username\": \"snehals\",\n        \"email\": \"snehal@testapp.com\",\n        \"name\": \"Snehal S\",\n        \"userType\": 1,\n        \"loginRetryLimit\": 0,\n        \"_id\": \"64e72d425184b61b95d4f74e\",\n        \"createdAt\": \"2023-08-24T10:13:22.603Z\",\n        \"updatedAt\": \"2023-08-24T10:13:22.603Z\",\n        \"isDeleted\": false,\n        \"isActive\": true,\n        \"__v\": 0,\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTcyZDQyNTE4NGI2MWI5NWQ0Zjc0ZSIsInVzZXJuYW1lIjoic25laGFscyIsImlhdCI6MTY5Mjg3MjAwMiwiZXhwIjoxNjkzNDcyMDAyfQ.w35L0NDJKsd6YXezqc2vwiFxczIKWPP8Y8gOLroNvIQ\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Doctor List",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTZlZjM2MmM2ZDgyOTNlZTRiYjVhNiIsInVzZXJuYW1lIjoibWl0dWxzIiwiaWF0IjoxNjkyODU2MTE4LCJleHAiOjE2OTM0NTYxMTh9.8LRti3hTHexrXuBIcbz-QI-S34EVdB0IUdIhb4Hs8lY"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"query\": {},\n  \"options\": {\n    \"offset\": 0,\n    \"page\": 1,\n    \"limit\": 10,\n    \"pagination\": true,\n    \"forceCountFn\": false\n  },\n  \"isCountOnly\": false\n}"
+				},
+				"url": {
+					"raw": "https://demoapiwisegpt.dhiwise.co/device/api/v1/doctors/list",
+					"protocol": "https",
+					"host": [
+						"demoapiwisegpt",
+						"dhiwise",
+						"co"
+					],
+					"path": [
+						"device",
+						"api",
+						"v1",
+						"doctors",
+						"list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Doctor List Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTZlZjM2MmM2ZDgyOTNlZTRiYjVhNiIsInVzZXJuYW1lIjoibWl0dWxzIiwiaWF0IjoxNjkyODU2MTE4LCJleHAiOjE2OTM0NTYxMTh9.8LRti3hTHexrXuBIcbz-QI-S34EVdB0IUdIhb4Hs8lY"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": {},\n  \"options\": {\n    \"offset\": 0,\n    \"page\": 1,\n    \"limit\": 10,\n    \"pagination\": true,\n    \"forceCountFn\": false\n  },\n  \"isCountOnly\": false\n}"
+						},
+						"url": {
+							"raw": "https://demoapiwisegpt.dhiwise.co/device/api/v1/doctors/list",
+							"protocol": "https",
+							"host": [
+								"demoapiwisegpt",
+								"dhiwise",
+								"co"
+							],
+							"path": [
+								"device",
+								"api",
+								"v1",
+								"doctors",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 24 Aug 2023 06:16:25 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4f4-6yOS6d2m/P9tNThy9pX4ySrxQV0\""
+						},
+						{
+							"key": "Server",
+							"value": "express"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "express"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=691200, s-maxage=691200"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, must-revalidate, proxy-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "public"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"message\": \"Your request is successfully executed\",\n    \"data\": {\n        \"data\": [\n            {\n                \"location\": {\n                    \"lattitude\": 981.236,\n                    \"longitude\": 289.654335\n                },\n                \"name\": \"Dr. Marcus Horizon D\",\n                \"speciality\": \"Cardiologist\",\n                \"available\": true,\n                \"distance\": \"3000\",\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"rating\": 667,\n                \"createdAt\": \"2023-08-24T05:50:17.296Z\",\n                \"updatedAt\": \"2023-08-24T05:50:17.296Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6ef992c6d8293ee4bb5b8\"\n            },\n            {\n                \"location\": {\n                    \"lattitude\": 81.236,\n                    \"longitude\": 29.654335\n                },\n                \"name\": \"Dr. Maria Alena\",\n                \"speciality\": \"Cardiologist\",\n                \"available\": true,\n                \"distance\": \"800\",\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"rating\": 1000,\n                \"createdAt\": \"2023-08-24T05:50:58.706Z\",\n                \"updatedAt\": \"2023-08-24T05:50:58.706Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6efc22c6d8293ee4bb5bf\"\n            },\n            {\n                \"location\": {\n                    \"lattitude\": 10.26765,\n                    \"longitude\": 24.34565\n                },\n                \"name\": \"Ms. Mae Senger\",\n                \"speciality\": \"General Physician\",\n                \"available\": true,\n                \"distance\": \"80\",\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"rating\": 3500,\n                \"createdAt\": \"2023-08-24T05:53:34.880Z\",\n                \"updatedAt\": \"2023-08-24T05:53:34.880Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6f05e2c6d8293ee4bb5c6\"\n            }\n        ],\n        \"paginator\": {\n            \"itemCount\": 3,\n            \"offset\": 0,\n            \"perPage\": 10,\n            \"pageCount\": 1,\n            \"currentPage\": 1,\n            \"slNo\": 1,\n            \"hasPrevPage\": false,\n            \"hasNextPage\": false,\n            \"prev\": null,\n            \"next\": null\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Top doctors",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTZlZjM2MmM2ZDgyOTNlZTRiYjVhNiIsInVzZXJuYW1lIjoibWl0dWxzIiwiaWF0IjoxNjkyODU2MTE4LCJleHAiOjE2OTM0NTYxMTh9.8LRti3hTHexrXuBIcbz-QI-S34EVdB0IUdIhb4Hs8lY"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\": {},\n\t\"options\": {\n\t\t\"sort\": {\"rating\": -1},\n\t\t\"offset\": 0,\n\t\t\"page\": 1,\n\t\t\"limit\": 10,\n\t\t\"pagination\": true,\n\t\t\"read\": {},\n\t\t\"options\": {}\n\t},\n\t\"isCountOnly\": false\n}"
+				},
+				"url": {
+					"raw": "https://demoapiwisegpt.dhiwise.co/device/api/v1/doctors/list",
+					"protocol": "https",
+					"host": [
+						"demoapiwisegpt",
+						"dhiwise",
+						"co"
+					],
+					"path": [
+						"device",
+						"api",
+						"v1",
+						"doctors",
+						"list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Top doctors Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTZlZjM2MmM2ZDgyOTNlZTRiYjVhNiIsInVzZXJuYW1lIjoibWl0dWxzIiwiaWF0IjoxNjkyODU2MTE4LCJleHAiOjE2OTM0NTYxMTh9.8LRti3hTHexrXuBIcbz-QI-S34EVdB0IUdIhb4Hs8lY"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"query\": {},\n\t\"options\": {\n\t\t\"sort\": {\"rating\": -1},\n\t\t\"offset\": 0,\n\t\t\"page\": 1,\n\t\t\"limit\": 10,\n\t\t\"pagination\": true,\n\t\t\"read\": {},\n\t\t\"options\": {}\n\t},\n\t\"isCountOnly\": false\n}"
+						},
+						"url": {
+							"raw": "https://demoapiwisegpt.dhiwise.co/device/api/v1/doctors/list",
+							"protocol": "https",
+							"host": [
+								"demoapiwisegpt",
+								"dhiwise",
+								"co"
+							],
+							"path": [
+								"device",
+								"api",
+								"v1",
+								"doctors",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 24 Aug 2023 06:16:39 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4f4-yRdsA2biBWA3ra44IsUWngK44Og\""
+						},
+						{
+							"key": "Server",
+							"value": "express"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "express"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=691200, s-maxage=691200"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, must-revalidate, proxy-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "public"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"message\": \"Your request is successfully executed\",\n    \"data\": {\n        \"data\": [\n            {\n                \"location\": {\n                    \"lattitude\": 10.26765,\n                    \"longitude\": 24.34565\n                },\n                \"name\": \"Ms. Mae Senger\",\n                \"speciality\": \"General Physician\",\n                \"available\": true,\n                \"distance\": \"80\",\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"rating\": 3500,\n                \"createdAt\": \"2023-08-24T05:53:34.880Z\",\n                \"updatedAt\": \"2023-08-24T05:53:34.880Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6f05e2c6d8293ee4bb5c6\"\n            },\n            {\n                \"location\": {\n                    \"lattitude\": 81.236,\n                    \"longitude\": 29.654335\n                },\n                \"name\": \"Dr. Maria Alena\",\n                \"speciality\": \"Cardiologist\",\n                \"available\": true,\n                \"distance\": \"800\",\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"rating\": 1000,\n                \"createdAt\": \"2023-08-24T05:50:58.706Z\",\n                \"updatedAt\": \"2023-08-24T05:50:58.706Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6efc22c6d8293ee4bb5bf\"\n            },\n            {\n                \"location\": {\n                    \"lattitude\": 981.236,\n                    \"longitude\": 289.654335\n                },\n                \"name\": \"Dr. Marcus Horizon D\",\n                \"speciality\": \"Cardiologist\",\n                \"available\": true,\n                \"distance\": \"3000\",\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"rating\": 667,\n                \"createdAt\": \"2023-08-24T05:50:17.296Z\",\n                \"updatedAt\": \"2023-08-24T05:50:17.296Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6ef992c6d8293ee4bb5b8\"\n            }\n        ],\n        \"paginator\": {\n            \"itemCount\": 3,\n            \"offset\": 0,\n            \"perPage\": 10,\n            \"pageCount\": 1,\n            \"currentPage\": 1,\n            \"slNo\": 1,\n            \"hasPrevPage\": false,\n            \"hasNextPage\": false,\n            \"prev\": null,\n            \"next\": null\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Search Doctor",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTZlZjM2MmM2ZDgyOTNlZTRiYjVhNiIsInVzZXJuYW1lIjoibWl0dWxzIiwiaWF0IjoxNjkyODU2MTE4LCJleHAiOjE2OTM0NTYxMTh9.8LRti3hTHexrXuBIcbz-QI-S34EVdB0IUdIhb4Hs8lY"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\": {\n\t\t\"name\": {\"$regex\": \"maria\", \"$options\": \"i\"}\n\t},\n\t\"options\": {\n\t\t\"offset\": 0,\n\t\t\"page\": 1,\n\t\t\"limit\": 10,\n\t\t\"pagination\": true,\n\t\t\"read\": {},\n\t\t\"options\": {}\n\t},\n\t\"isCountOnly\": false\n}"
+				},
+				"url": {
+					"raw": "https://demoapiwisegpt.dhiwise.co/device/api/v1/doctors/list",
+					"protocol": "https",
+					"host": [
+						"demoapiwisegpt",
+						"dhiwise",
+						"co"
+					],
+					"path": [
+						"device",
+						"api",
+						"v1",
+						"doctors",
+						"list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search Doctor Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTZlZjM2MmM2ZDgyOTNlZTRiYjVhNiIsInVzZXJuYW1lIjoibWl0dWxzIiwiaWF0IjoxNjkyODU2MTE4LCJleHAiOjE2OTM0NTYxMTh9.8LRti3hTHexrXuBIcbz-QI-S34EVdB0IUdIhb4Hs8lY"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"query\": {\n\t\t\"name\": {\"$regex\": \"maria\", \"$options\": \"i\"}\n\t},\n\t\"options\": {\n\t\t\"offset\": 0,\n\t\t\"page\": 1,\n\t\t\"limit\": 10,\n\t\t\"pagination\": true,\n\t\t\"read\": {},\n\t\t\"options\": {}\n\t},\n\t\"isCountOnly\": false\n}"
+						},
+						"url": {
+							"raw": "https://demoapiwisegpt.dhiwise.co/device/api/v1/doctors/list",
+							"protocol": "https",
+							"host": [
+								"demoapiwisegpt",
+								"dhiwise",
+								"co"
+							],
+							"path": [
+								"device",
+								"api",
+								"v1",
+								"doctors",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 24 Aug 2023 06:16:49 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"245-HBilxvGLXJQq+kxxwWz1/czX9sk\""
+						},
+						{
+							"key": "Server",
+							"value": "express"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "express"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=691200, s-maxage=691200"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, must-revalidate, proxy-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "public"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"message\": \"Your request is successfully executed\",\n    \"data\": {\n        \"data\": [\n            {\n                \"location\": {\n                    \"lattitude\": 81.236,\n                    \"longitude\": 29.654335\n                },\n                \"name\": \"Dr. Maria Alena\",\n                \"speciality\": \"Cardiologist\",\n                \"available\": true,\n                \"distance\": \"800\",\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"rating\": 1000,\n                \"createdAt\": \"2023-08-24T05:50:58.706Z\",\n                \"updatedAt\": \"2023-08-24T05:50:58.706Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6efc22c6d8293ee4bb5bf\"\n            }\n        ],\n        \"paginator\": {\n            \"itemCount\": 1,\n            \"offset\": 0,\n            \"perPage\": 10,\n            \"pageCount\": 1,\n            \"currentPage\": 1,\n            \"slNo\": 1,\n            \"hasPrevPage\": false,\n            \"hasNextPage\": false,\n            \"prev\": null,\n            \"next\": null\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Recommended Doctors",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTZlZjM2MmM2ZDgyOTNlZTRiYjVhNiIsInVzZXJuYW1lIjoibWl0dWxzIiwiaWF0IjoxNjkyODU2MTE4LCJleHAiOjE2OTM0NTYxMTh9.8LRti3hTHexrXuBIcbz-QI-S34EVdB0IUdIhb4Hs8lY"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\": {},\n\t\"options\": {\n\t\t\"sort\": {\"rating\": -1, \"distance\": -1},\n\t\t\"offset\": 0,\n\t\t\"page\": 1,\n\t\t\"limit\": 10,\n\t\t\"pagination\": true,\n\t\t\"read\": {},\n\t\t\"options\": {}\n\t},\n\t\"isCountOnly\": false\n}"
+				},
+				"url": {
+					"raw": "https://demoapiwisegpt.dhiwise.co/device/api/v1/doctors/list",
+					"protocol": "https",
+					"host": [
+						"demoapiwisegpt",
+						"dhiwise",
+						"co"
+					],
+					"path": [
+						"device",
+						"api",
+						"v1",
+						"doctors",
+						"list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Recommended Doctors Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTZlZjM2MmM2ZDgyOTNlZTRiYjVhNiIsInVzZXJuYW1lIjoibWl0dWxzIiwiaWF0IjoxNjkyODU2MTE4LCJleHAiOjE2OTM0NTYxMTh9.8LRti3hTHexrXuBIcbz-QI-S34EVdB0IUdIhb4Hs8lY"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"query\": {},\n\t\"options\": {\n\t\t\"sort\": {\"rating\": -1, \"distance\": -1},\n\t\t\"offset\": 0,\n\t\t\"page\": 1,\n\t\t\"limit\": 10,\n\t\t\"pagination\": true,\n\t\t\"read\": {},\n\t\t\"options\": {}\n\t},\n\t\"isCountOnly\": false\n}"
+						},
+						"url": {
+							"raw": "https://demoapiwisegpt.dhiwise.co/device/api/v1/doctors/list",
+							"protocol": "https",
+							"host": [
+								"demoapiwisegpt",
+								"dhiwise",
+								"co"
+							],
+							"path": [
+								"device",
+								"api",
+								"v1",
+								"doctors",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 24 Aug 2023 06:16:59 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4f4-yRdsA2biBWA3ra44IsUWngK44Og\""
+						},
+						{
+							"key": "Server",
+							"value": "express"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "express"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=691200, s-maxage=691200"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, must-revalidate, proxy-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "public"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"message\": \"Your request is successfully executed\",\n    \"data\": {\n        \"data\": [\n            {\n                \"location\": {\n                    \"lattitude\": 10.26765,\n                    \"longitude\": 24.34565\n                },\n                \"name\": \"Ms. Mae Senger\",\n                \"speciality\": \"General Physician\",\n                \"available\": true,\n                \"distance\": \"80\",\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"rating\": 3500,\n                \"createdAt\": \"2023-08-24T05:53:34.880Z\",\n                \"updatedAt\": \"2023-08-24T05:53:34.880Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6f05e2c6d8293ee4bb5c6\"\n            },\n            {\n                \"location\": {\n                    \"lattitude\": 81.236,\n                    \"longitude\": 29.654335\n                },\n                \"name\": \"Dr. Maria Alena\",\n                \"speciality\": \"Cardiologist\",\n                \"available\": true,\n                \"distance\": \"800\",\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"rating\": 1000,\n                \"createdAt\": \"2023-08-24T05:50:58.706Z\",\n                \"updatedAt\": \"2023-08-24T05:50:58.706Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6efc22c6d8293ee4bb5bf\"\n            },\n            {\n                \"location\": {\n                    \"lattitude\": 981.236,\n                    \"longitude\": 289.654335\n                },\n                \"name\": \"Dr. Marcus Horizon D\",\n                \"speciality\": \"Cardiologist\",\n                \"available\": true,\n                \"distance\": \"3000\",\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"rating\": 667,\n                \"createdAt\": \"2023-08-24T05:50:17.296Z\",\n                \"updatedAt\": \"2023-08-24T05:50:17.296Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6ef992c6d8293ee4bb5b8\"\n            }\n        ],\n        \"paginator\": {\n            \"itemCount\": 3,\n            \"offset\": 0,\n            \"perPage\": 10,\n            \"pageCount\": 1,\n            \"currentPage\": 1,\n            \"slNo\": 1,\n            \"hasPrevPage\": false,\n            \"hasNextPage\": false,\n            \"prev\": null,\n            \"next\": null\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "search articles",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTZlZjM2MmM2ZDgyOTNlZTRiYjVhNiIsInVzZXJuYW1lIjoibWl0dWxzIiwiaWF0IjoxNjkyODU2MTE4LCJleHAiOjE2OTM0NTYxMTh9.8LRti3hTHexrXuBIcbz-QI-S34EVdB0IUdIhb4Hs8lY"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\": {\n\t\t\"title\": {\"$regex\": \"covid\", \"$options\": \"i\"}\n\t},\n\t\"options\": {\n\t\t\"offset\": 0,\n\t\t\"page\": 1,\n\t\t\"limit\": 10,\n\t\t\"pagination\": true\n\t},\n\t\"isCountOnly\": false\n}"
+				},
+				"url": {
+					"raw": "https://demoapiwisegpt.dhiwise.co/device/api/v1/article/list",
+					"protocol": "https",
+					"host": [
+						"demoapiwisegpt",
+						"dhiwise",
+						"co"
+					],
+					"path": [
+						"device",
+						"api",
+						"v1",
+						"article",
+						"list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "search articles Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTZlZjM2MmM2ZDgyOTNlZTRiYjVhNiIsInVzZXJuYW1lIjoibWl0dWxzIiwiaWF0IjoxNjkyODU2MTE4LCJleHAiOjE2OTM0NTYxMTh9.8LRti3hTHexrXuBIcbz-QI-S34EVdB0IUdIhb4Hs8lY"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"query\": {\n\t\t\"title\": {\"$regex\": \"covid\", \"$options\": \"i\"}\n\t},\n\t\"options\": {\n\t\t\"offset\": 0,\n\t\t\"page\": 1,\n\t\t\"limit\": 10,\n\t\t\"pagination\": true\n\t},\n\t\"isCountOnly\": false\n}"
+						},
+						"url": {
+							"raw": "https://demoapiwisegpt.dhiwise.co/device/api/v1/article/list",
+							"protocol": "https",
+							"host": [
+								"demoapiwisegpt",
+								"dhiwise",
+								"co"
+							],
+							"path": [
+								"device",
+								"api",
+								"v1",
+								"article",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 24 Aug 2023 06:17:26 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"57f-qwXy4oiCh6/93ISs9o4GFvq1gT0\""
+						},
+						{
+							"key": "Server",
+							"value": "express"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "express"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=691200, s-maxage=691200"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, must-revalidate, proxy-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "public"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"message\": \"Your request is successfully executed\",\n    \"data\": {\n        \"data\": [\n            {\n                \"title\": \"Comparing the AstraZeneca and Sinovac COVID-19 Vaccines\",\n                \"tags\": [\n                    \"covid-19\"\n                ],\n                \"imageUrl\": \"https://picsum.photos/200\",\n                \"readTime\": 690,\n                \"content\": \"Comparing the AstraZeneca and Sinovac COVID-19 Vaccines\",\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"createdAt\": \"2023-08-24T05:55:55.707Z\",\n                \"updatedAt\": \"2023-08-24T05:55:55.707Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6f0eb2c6d8293ee4bb5cd\"\n            },\n            {\n                \"title\": \"The Horror Of The Second Wave Of COVID-19\",\n                \"tags\": [\n                    \"covid-19\",\n                    \"fever\",\n                    \"national\"\n                ],\n                \"imageUrl\": \"https://picsum.photos/200\",\n                \"readTime\": 60,\n                \"content\": \"The Horror Of The Second Wave Of COVID-19\",\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"createdAt\": \"2023-08-24T05:56:35.035Z\",\n                \"updatedAt\": \"2023-08-24T05:56:35.035Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6f1132c6d8293ee4bb5d4\"\n            },\n            {\n                \"title\": \"Traditional Herbal Medicine Treatments for COVID-19\",\n                \"tags\": [\n                    \"covid-19\",\n                    \"herbal\"\n                ],\n                \"imageUrl\": \"https://picsum.photos/200\",\n                \"readTime\": 450,\n                \"content\": \"Traditional Herbal Medicine Treatments for COVID-19\",\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"createdAt\": \"2023-08-24T05:57:53.666Z\",\n                \"updatedAt\": \"2023-08-24T05:57:53.666Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6f1612c6d8293ee4bb5e2\"\n            }\n        ],\n        \"paginator\": {\n            \"itemCount\": 3,\n            \"offset\": 0,\n            \"perPage\": 10,\n            \"pageCount\": 1,\n            \"currentPage\": 1,\n            \"slNo\": 1,\n            \"hasPrevPage\": false,\n            \"hasNextPage\": false,\n            \"prev\": null,\n            \"next\": null\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Trending and Related Articles",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTZlZjM2MmM2ZDgyOTNlZTRiYjVhNiIsInVzZXJuYW1lIjoibWl0dWxzIiwiaWF0IjoxNjkyODU2MTE4LCJleHAiOjE2OTM0NTYxMTh9.8LRti3hTHexrXuBIcbz-QI-S34EVdB0IUdIhb4Hs8lY"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\": {},\n\t\"options\": {\n                \"sort\": {\"readTime\": -1},\n\t\t\"offset\": 0,\n\t\t\"page\": 1,\n\t\t\"limit\": 10,\n\t\t\"pagination\": true\n\t},\n\t\"isCountOnly\": false\n}"
+				},
+				"url": {
+					"raw": "https://demoapiwisegpt.dhiwise.co/device/api/v1/article/list",
+					"protocol": "https",
+					"host": [
+						"demoapiwisegpt",
+						"dhiwise",
+						"co"
+					],
+					"path": [
+						"device",
+						"api",
+						"v1",
+						"article",
+						"list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Trending and Related Articles Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTZlZjM2MmM2ZDgyOTNlZTRiYjVhNiIsInVzZXJuYW1lIjoibWl0dWxzIiwiaWF0IjoxNjkyODU2MTE4LCJleHAiOjE2OTM0NTYxMTh9.8LRti3hTHexrXuBIcbz-QI-S34EVdB0IUdIhb4Hs8lY"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"query\": {},\n\t\"options\": {\n                \"sort\": {\"readTime\": -1},\n\t\t\"offset\": 0,\n\t\t\"page\": 1,\n\t\t\"limit\": 10,\n\t\t\"pagination\": true\n\t},\n\t\"isCountOnly\": false\n}"
+						},
+						"url": {
+							"raw": "https://demoapiwisegpt.dhiwise.co/device/api/v1/article/list",
+							"protocol": "https",
+							"host": [
+								"demoapiwisegpt",
+								"dhiwise",
+								"co"
+							],
+							"path": [
+								"device",
+								"api",
+								"v1",
+								"article",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 24 Aug 2023 06:17:34 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8b9-jtgPT9/jR39vFux+Ja8AS+Gc58U\""
+						},
+						{
+							"key": "Server",
+							"value": "express"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "express"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=691200, s-maxage=691200"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, must-revalidate, proxy-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "public"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"message\": \"Your request is successfully executed\",\n    \"data\": {\n        \"data\": [\n            {\n                \"title\": \"The 25 Healthiest Fruits You Can Eat, According to a Nutritionist\",\n                \"tags\": [\n                    \"nutrition\"\n                ],\n                \"imageUrl\": \"https://picsum.photos/200\",\n                \"readTime\": 1000,\n                \"content\": \"The 25 Healthiest Fruits You Can Eat, According to a Nutritionist\",\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"createdAt\": \"2023-08-24T05:57:18.881Z\",\n                \"updatedAt\": \"2023-08-24T05:57:18.881Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6f13e2c6d8293ee4bb5db\"\n            },\n            {\n                \"title\": \"Comparing the AstraZeneca and Sinovac COVID-19 Vaccines\",\n                \"tags\": [\n                    \"covid-19\"\n                ],\n                \"imageUrl\": \"https://picsum.photos/200\",\n                \"readTime\": 690,\n                \"content\": \"Comparing the AstraZeneca and Sinovac COVID-19 Vaccines\",\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"createdAt\": \"2023-08-24T05:55:55.707Z\",\n                \"updatedAt\": \"2023-08-24T05:55:55.707Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6f0eb2c6d8293ee4bb5cd\"\n            },\n            {\n                \"title\": \"Traditional Herbal Medicine Treatments for COVID-19\",\n                \"tags\": [\n                    \"covid-19\",\n                    \"herbal\"\n                ],\n                \"imageUrl\": \"https://picsum.photos/200\",\n                \"readTime\": 450,\n                \"content\": \"Traditional Herbal Medicine Treatments for COVID-19\",\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"createdAt\": \"2023-08-24T05:57:53.666Z\",\n                \"updatedAt\": \"2023-08-24T05:57:53.666Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6f1612c6d8293ee4bb5e2\"\n            },\n            {\n                \"title\": \"Beauty Tips For Face: 10 Dos and Don'ts for Naturally Beautiful Skin\",\n                \"tags\": [\n                    \"skin\"\n                ],\n                \"imageUrl\": \"https://picsum.photos/200\",\n                \"readTime\": 320,\n                \"content\": \"Beauty Tips For Face: 10 Dos and Don'ts for Naturally Beautiful Skin\",\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"createdAt\": \"2023-08-24T05:58:27.044Z\",\n                \"updatedAt\": \"2023-08-24T05:58:27.044Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6f1832c6d8293ee4bb5e9\"\n            },\n            {\n                \"title\": \"The Horror Of The Second Wave Of COVID-19\",\n                \"tags\": [\n                    \"covid-19\",\n                    \"fever\",\n                    \"national\"\n                ],\n                \"imageUrl\": \"https://picsum.photos/200\",\n                \"readTime\": 60,\n                \"content\": \"The Horror Of The Second Wave Of COVID-19\",\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"createdAt\": \"2023-08-24T05:56:35.035Z\",\n                \"updatedAt\": \"2023-08-24T05:56:35.035Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6f1132c6d8293ee4bb5d4\"\n            }\n        ],\n        \"paginator\": {\n            \"itemCount\": 5,\n            \"offset\": 0,\n            \"perPage\": 10,\n            \"pageCount\": 1,\n            \"currentPage\": 1,\n            \"slNo\": 1,\n            \"hasPrevPage\": false,\n            \"hasNextPage\": false,\n            \"prev\": null,\n            \"next\": null\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Search Products",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTZlZjM2MmM2ZDgyOTNlZTRiYjVhNiIsInVzZXJuYW1lIjoibWl0dWxzIiwiaWF0IjoxNjkyODU2MTE4LCJleHAiOjE2OTM0NTYxMTh9.8LRti3hTHexrXuBIcbz-QI-S34EVdB0IUdIhb4Hs8lY"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\": { \"title\": {\"$regex\": \"dol\", \"$options\": \"i\"} },\n\t\"options\": {\n\t\t\"offset\": 0,\n\t\t\"page\": 1,\n\t\t\"limit\": 10,\n\t\t\"pagination\": true,\n\t\t\"useEstimatedCount\": false,\n\t\t\"useCustomCountFn\": false,\n\t\t\"forceCountFn\": false,\n\t\t\"read\": {},\n\t\t\"options\": {}\n\t},\n\t\"isCountOnly\": false\n}"
+				},
+				"url": {
+					"raw": "https://demoapiwisegpt.dhiwise.co/device/api/v1/product/list",
+					"protocol": "https",
+					"host": [
+						"demoapiwisegpt",
+						"dhiwise",
+						"co"
+					],
+					"path": [
+						"device",
+						"api",
+						"v1",
+						"product",
+						"list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search Products Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTZlZjM2MmM2ZDgyOTNlZTRiYjVhNiIsInVzZXJuYW1lIjoibWl0dWxzIiwiaWF0IjoxNjkyODU2MTE4LCJleHAiOjE2OTM0NTYxMTh9.8LRti3hTHexrXuBIcbz-QI-S34EVdB0IUdIhb4Hs8lY"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"query\": { \"title\": {\"$regex\": \"dol\", \"$options\": \"i\"} },\n\t\"options\": {\n\t\t\"offset\": 0,\n\t\t\"page\": 1,\n\t\t\"limit\": 10,\n\t\t\"pagination\": true,\n\t\t\"useEstimatedCount\": false,\n\t\t\"useCustomCountFn\": false,\n\t\t\"forceCountFn\": false,\n\t\t\"read\": {},\n\t\t\"options\": {}\n\t},\n\t\"isCountOnly\": false\n}"
+						},
+						"url": {
+							"raw": "https://demoapiwisegpt.dhiwise.co/device/api/v1/product/list",
+							"protocol": "https",
+							"host": [
+								"demoapiwisegpt",
+								"dhiwise",
+								"co"
+							],
+							"path": [
+								"device",
+								"api",
+								"v1",
+								"product",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 24 Aug 2023 06:17:47 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"23e-Dbx7ZcIKXurJJ5LPyt0JggaI5us\""
+						},
+						{
+							"key": "Server",
+							"value": "express"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "express"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=691200, s-maxage=691200"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, must-revalidate, proxy-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "public"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"message\": \"Your request is successfully executed\",\n    \"data\": {\n        \"data\": [\n            {\n                \"title\": \"Panadol\",\n                \"price\": 2,\n                \"quantity\": 20,\n                \"totalPrice\": 40,\n                \"unit\": 1000,\n                \"discount\": 2,\n                \"finalPrice\": 18,\n                \"imageUrl\": \"https://picsum.photos/200\",\n                \"tags\": [],\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"createdAt\": \"2023-08-24T05:59:42.451Z\",\n                \"updatedAt\": \"2023-08-24T05:59:42.451Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6f1ce2c6d8293ee4bb5f0\"\n            }\n        ],\n        \"paginator\": {\n            \"itemCount\": 1,\n            \"offset\": 0,\n            \"perPage\": 10,\n            \"pageCount\": 1,\n            \"currentPage\": 1,\n            \"slNo\": 1,\n            \"hasPrevPage\": false,\n            \"hasNextPage\": false,\n            \"prev\": null,\n            \"next\": null\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Popular and Sale Products",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTZlZjM2MmM2ZDgyOTNlZTRiYjVhNiIsInVzZXJuYW1lIjoibWl0dWxzIiwiaWF0IjoxNjkyODU2MTE4LCJleHAiOjE2OTM0NTYxMTh9.8LRti3hTHexrXuBIcbz-QI-S34EVdB0IUdIhb4Hs8lY"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\": { },\n\t\"options\": {\n                \"sort\": { \"discount\": -1 },\n\t\t\"offset\": 0,\n\t\t\"page\": 1,\n\t\t\"limit\": 10,\n\t\t\"pagination\": true,\n\t\t\"useEstimatedCount\": false,\n\t\t\"useCustomCountFn\": false,\n\t\t\"forceCountFn\": false,\n\t\t\"read\": {},\n\t\t\"options\": {}\n\t},\n\t\"isCountOnly\": false\n}"
+				},
+				"url": {
+					"raw": "https://demoapiwisegpt.dhiwise.co/device/api/v1/product/list",
+					"protocol": "https",
+					"host": [
+						"demoapiwisegpt",
+						"dhiwise",
+						"co"
+					],
+					"path": [
+						"device",
+						"api",
+						"v1",
+						"product",
+						"list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Popular and Sale Products Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTZlZjM2MmM2ZDgyOTNlZTRiYjVhNiIsInVzZXJuYW1lIjoibWl0dWxzIiwiaWF0IjoxNjkyODU2MTE4LCJleHAiOjE2OTM0NTYxMTh9.8LRti3hTHexrXuBIcbz-QI-S34EVdB0IUdIhb4Hs8lY"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"query\": { },\n\t\"options\": {\n                \"sort\": { \"discount\": -1 },\n\t\t\"offset\": 0,\n\t\t\"page\": 1,\n\t\t\"limit\": 10,\n\t\t\"pagination\": true,\n\t\t\"useEstimatedCount\": false,\n\t\t\"useCustomCountFn\": false,\n\t\t\"forceCountFn\": false,\n\t\t\"read\": {},\n\t\t\"options\": {}\n\t},\n\t\"isCountOnly\": false\n}"
+						},
+						"url": {
+							"raw": "https://demoapiwisegpt.dhiwise.co/device/api/v1/product/list",
+							"protocol": "https",
+							"host": [
+								"demoapiwisegpt",
+								"dhiwise",
+								"co"
+							],
+							"path": [
+								"device",
+								"api",
+								"v1",
+								"product",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 24 Aug 2023 06:17:58 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8d6-IIOvJJ8Behl3vdFmgfasmJpFpL0\""
+						},
+						{
+							"key": "Server",
+							"value": "express"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "express"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=691200, s-maxage=691200"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, must-revalidate, proxy-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "public"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"SUCCESS\",\n    \"message\": \"Your request is successfully executed\",\n    \"data\": {\n        \"data\": [\n            {\n                \"title\": \"OBH Combi\",\n                \"price\": 9.99,\n                \"quantity\": 75,\n                \"totalPrice\": 749.25,\n                \"unit\": 1,\n                \"discount\": 10,\n                \"finalPrice\": 674.32,\n                \"imageUrl\": \"https://picsum.photos/200\",\n                \"tags\": [],\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"createdAt\": \"2023-08-24T06:02:06.145Z\",\n                \"updatedAt\": \"2023-08-24T06:02:06.145Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6f25e2c6d8293ee4bb605\"\n            },\n            {\n                \"title\": \"Betadine\",\n                \"price\": 6.99,\n                \"quantity\": 50,\n                \"totalPrice\": 8.99,\n                \"unit\": 1,\n                \"discount\": 10,\n                \"finalPrice\": 6.99,\n                \"imageUrl\": \"https://picsum.photos/200\",\n                \"tags\": [],\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"createdAt\": \"2023-08-24T06:02:44.310Z\",\n                \"updatedAt\": \"2023-08-24T06:02:44.310Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6f2842c6d8293ee4bb60c\"\n            },\n            {\n                \"title\": \"Bodrexin\",\n                \"price\": 7.99,\n                \"quantity\": 75,\n                \"totalPrice\": 8.99,\n                \"unit\": 1,\n                \"discount\": 10,\n                \"finalPrice\": 7.99,\n                \"imageUrl\": \"https://picsum.photos/200\",\n                \"tags\": [],\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"createdAt\": \"2023-08-24T06:03:33.070Z\",\n                \"updatedAt\": \"2023-08-24T06:03:33.070Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6f2b52c6d8293ee4bb613\"\n            },\n            {\n                \"title\": \"Panadol\",\n                \"price\": 2,\n                \"quantity\": 20,\n                \"totalPrice\": 40,\n                \"unit\": 1000,\n                \"discount\": 2,\n                \"finalPrice\": 18,\n                \"imageUrl\": \"https://picsum.photos/200\",\n                \"tags\": [],\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"createdAt\": \"2023-08-24T05:59:42.451Z\",\n                \"updatedAt\": \"2023-08-24T05:59:42.451Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6f1ce2c6d8293ee4bb5f0\"\n            },\n            {\n                \"title\": \"Bodrex Herbal\",\n                \"price\": 7.99,\n                \"quantity\": 100,\n                \"totalPrice\": 799,\n                \"unit\": 10,\n                \"discount\": 0,\n                \"finalPrice\": 799,\n                \"imageUrl\": \"https://picsum.photos/200\",\n                \"tags\": [],\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"createdAt\": \"2023-08-24T06:00:20.544Z\",\n                \"updatedAt\": \"2023-08-24T06:00:20.544Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6f1f42c6d8293ee4bb5f7\"\n            },\n            {\n                \"title\": \"Konidin\",\n                \"price\": 5.99,\n                \"quantity\": 3,\n                \"totalPrice\": 18,\n                \"unit\": 10,\n                \"discount\": 0,\n                \"finalPrice\": 18,\n                \"imageUrl\": \"https://picsum.photos/200\",\n                \"tags\": [],\n                \"addedBy\": \"64e6ef362c6d8293ee4bb5a6\",\n                \"createdAt\": \"2023-08-24T06:00:49.460Z\",\n                \"updatedAt\": \"2023-08-24T06:00:49.460Z\",\n                \"isDeleted\": false,\n                \"isActive\": true,\n                \"id\": \"64e6f2112c6d8293ee4bb5fe\"\n            }\n        ],\n        \"paginator\": {\n            \"itemCount\": 6,\n            \"offset\": 0,\n            \"perPage\": 10,\n            \"pageCount\": 1,\n            \"currentPage\": 1,\n            \"slNo\": 1,\n            \"hasPrevPage\": false,\n            \"hasNextPage\": false,\n            \"prev\": null,\n            \"next\": null\n        }\n    }\n}"
+				}
+			]
+		}
+	]
+}
