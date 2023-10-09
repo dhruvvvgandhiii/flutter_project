@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:helthio_app/core/app_export.dart';
+import 'package:welltested_annotation/welltested_annotation.dart';
 
+
+@Welltested()
 class ProgressDialogUtils {
   static bool isProgressVisible = false;
 
