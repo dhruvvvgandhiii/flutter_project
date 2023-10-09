@@ -1,5 +1,6 @@
 import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
+import 'package:welltested_annotation/welltested_annotation.dart';
 
 // This functions are responsible to make UI responsive across all the mobile devices.
 
@@ -11,11 +12,12 @@ const num FIGMA_DESIGN_WIDTH = 375;
 const num FIGMA_DESIGN_HEIGHT = 812;
 const num FIGMA_DESIGN_STATUS_BAR = 0;
 
+@Welltested()
 ///This method is used to get device viewport width.
 get _width {
   return mediaQueryData.size.width;
 }
-
+@Welltested()
 ///This method is used to get device viewport height.
 get _height {
   num statusBar = mediaQueryData.viewPadding.top;
@@ -113,7 +115,7 @@ EdgeInsets getMarginOrPadding({
     ),
   );
 }
-
+@Welltested()
 extension FormatExtension on double {
   /// Return a [double] value with formatted according to provided fractionDigits
   double toDoubleValue({int fractionDigits = 2}) {

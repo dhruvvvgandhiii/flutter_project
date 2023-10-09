@@ -1,4 +1,8 @@
+import 'package:welltested_annotation/welltested_annotation.dart';
+
 /// Checks if string consist only Alphabet. (No Whitespace)
+
+@Welltested()
 bool isText(
   String? inputString, {
   bool isRequired = false,
@@ -20,6 +24,7 @@ bool isText(
   return isInputStringValid;
 }
 
+@Welltested()
 /// Checks if string is email.
 bool isValidEmail(
   String? inputString, {
@@ -50,6 +55,7 @@ bool isValidEmail(
 ///  at least a special character [@#$%^&+=]
 ///  length of at least 4
 /// no white space allowed
+@Welltested()
 bool isValidPassword(
   String? inputString, {
   bool isRequired = false,
